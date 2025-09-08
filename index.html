@@ -93,7 +93,8 @@
                     </aside>
 
                     <div id="loading-bar" class="col-span-full lg:col-span-8 order-3 lg:order-2 text-center hidden">
-                        <span class="loading loading-bars loading-xl"></span></div>
+                        <span class="loading loading-bars loading-xl"></span>
+                    </div>
 
                     <section id="tree-showcase-wrapper"
                         class="tree-showcase col-span-full lg:col-span-8 grid grid-cols-1 lg:grid-cols-3 gap-[30px] order-3 lg:order-2">
@@ -110,7 +111,101 @@
                 </div>
             </div>
 
+            <!-- Open the modal using ID.showModal() method -->
+
+            <dialog id="tree_details_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <div id="modal-container"></div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
+
+
+        <!--  About campaign  -->
+
+        <section class="about-campaign-area bg-[#f0fdf4] pb-14 lg:pb-[100px]">
+            <div class="w-11/12 lg:w-full max-w-[1090px] mx-auto">
+                <h3 class="text-3xl font-semibold text-center mb-10 text-[#1f2937]">About the Campaign</h3>
+                <div class="about-campaign-inner flex flex-col lg:flex-row gap-[30px] items-center">
+                    <div class="about-campaign-left flex-1">
+                        <img src="./assets/about.png" alt="About Image">
+                    </div>
+                    <div class="about-campaign-right flex-1">
+                        <p class="text-base text-[#1f2937] opacity-80">
+                            Green Earth is a global tree plantation initiative dedicated to fighting climate change.
+                            Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you
+                            help restore forests, create habitats for wildlife, and combat global warming.
+                        </p>
+                        <ul class="list-disc list-inside mt-5 space-y-1">
+                            <li class="text-base text-[#1f2937] opacity-80">Restoration of natural habitats</li>
+                            <li class="text-base text-[#1f2937] opacity-80">Improvement of air quality</li>
+                            <li class="text-base text-[#1f2937] opacity-80">Support for local communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  Our Impact  -->
+
+        <section class="our-impact-area bg-[#cff0dc] py-14 lg:py-[100px]">
+            <div class="w-11/12 lg:w-full max-w-[1650px] mx-auto">
+                <h3 class="text-3xl font-semibold text-center mb-10 text-[#1f2937]">Our Impact</h3>
+                <div class="our-impact-inner flex flex-col lg:flex-row justify-between gap-6 lg:gap-[50px]">
+                    <div class="our-impact-counter-item bg-white rounded-xl p-10 w-full text-center">
+                        <h5 class="text-[#15803d] font-semibold text-3xl mb-3">500K+</h5>
+                        <p class="text-base text-[#1f2937] opacity-80">Trees Planted</p>
+                    </div>
+                    <div class="our-impact-counter-item bg-white rounded-xl p-10 w-full text-center">
+                        <h5 class="text-[#15803d] font-semibold text-3xl mb-3">120+</h5>
+                        <p class="text-base text-[#1f2937] opacity-80">Communities Involved</p>
+                    </div>
+                    <div class="our-impact-counter-item bg-white rounded-xl p-10 w-full text-center">
+                        <h5 class="text-[#15803d] font-semibold text-3xl mb-3">30+</h5>
+                        <p class="text-base text-[#1f2937] opacity-80">Countries Reached</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--  Plan a Tree Today  -->
+
+        <section class="plan-tree-area bg-[#166534] py-14 lg:py-[100px]">
+            <div class="w-11/12 lg:w-full max-w-[1650px] mx-auto">
+                <div class="plan-tree-inner">
+                    <h3 class="text-3xl font-semibold text-center mb-10 text-white">Plant a Tree Today</h3>
+                    <form class="flex flex-col gap-3 bg-[#15803d] p-10 rounded-xl max-w-[650px] mx-auto">
+                        <input type="text" placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-[#e4e4e7] bg-white rounded-md placeholder:text-[#1f293780] focus-visible:outline-none" />
+                        <input type="email" placeholder="Your Email Address"
+                            class="w-full px-4 py-3 border border-[#e4e4e7] bg-white rounded-md placeholder:text-[#1f293780] focus-visible:outline-none" />
+                        <select
+                            class="select h-[50px] w-full px-4 border border-[#e4e4e7] bg-white rounded-md placeholder:text-[#1f293780] focus:outline-0 focus-within:outline-0">
+                            <option disabled selected>Number of Trees</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                        </select>
+                        <a href="./index.html"
+                            class="mt-2 inline-block text-base rounded-full bg-[#facc15] text-[#15803D] py-3 px-5 font-medium text-center">Donate
+                            Now</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    
 
 
 </body>
