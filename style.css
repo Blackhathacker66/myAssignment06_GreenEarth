@@ -12,18 +12,6 @@ select {
     padding-right: 30px;
 }
 
-
-.banner-area:before,
-.banner-area:after {
-    position: absolute;
-    content: '';
-    width: 546px;
-    height: 100%;
-    bottom: 0;
-    background-repeat: no-repeat;
-}
-
-
 .categories ul li {
     transition: all ease .2s;
 }
